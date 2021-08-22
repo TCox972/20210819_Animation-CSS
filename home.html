@@ -6,39 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+
     <title>OhMyFood!</title>
 </head>
 <body>
     <header>
-        <div id="logo">
+        <a href="./home.html" id="logo">
             <img src="./images/logo/ohmyfood.png" alt="logo">
-        </div>
+        </a>
     </header>
     <div id="location">
         <a href=""><i class="fas fa-map-marker-alt"></i></a>
-        <p>Paris, Belleville</p>
+        <form method="post" action="traitement.php">
+            <input type="text" name="search" placeholder="Paris, Belleville">
+        </form>
     </div>
     <div id="introduction">
-        <h1>Réservez le menu qui vous convient</h1>
-        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-        <p>Explorez nos restaurants</p>
+        <p id="introduction__headline">Réservez le menu qui vous convient</p>
+        <p id="introduction__under">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+        <a href="#restaurants"><button>Explorer nos restaurants</button></a>
     </div>
     <section id="use">
         <h2>Fonctionnement</h2>
         <div class="step">
-            <p>1</p>
+            <p class="step__number">1</p>
             <i class="fas fa-mobile-alt"></i>
-            <p>Choisissez un restaurant</p>
+            <p class="step__text">Choisissez un restaurant</p>
         </div>
         <div class="step">
-            <p>2</p>
+            <p class="step__number">2</p>
             <i class="fas fa-list"></i>
-            <p>Composez votre menu</p>
+            <p class="step__text">Composez votre menu</p>
         </div>
         <div class="step">
-            <p>3</p>
+            <p class="step__number">3</p>
             <i class="fas fa-store"></i>
-            <p>Dégustez au restaurant</p>
+            <p class="step__text">Dégustez au restaurant</p>
         </div>
     </section>
     <section id="restaurants">
