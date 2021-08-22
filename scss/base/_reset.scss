@@ -3,10 +3,11 @@ body{
     margin: auto;
 }
 
-p,h1,h2,h3{
+p,h1,h2,h3,a{
     margin: 0;
+    text-decoration: none;
+    color: black;
 }
-
 
 section{
     padding: 20px;

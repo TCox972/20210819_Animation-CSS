@@ -20,7 +20,7 @@
             color: white;
             font-size: 1em;
             padding: 15px;
-            box-shadow: 0px 9px 25px -10px gray ;
+            box-shadow: $shadow-light;
             margin-bottom: 60px;
             background: $colour-secondary;
             background: -moz-linear-gradient(-45deg, $colour-secondary 0%, $colour-primary 100%);
@@ -65,7 +65,7 @@
         background-color: $colour-menu;
         border-radius: 20px;
         margin: 0px 0px 25px 20px;
-        box-shadow: 0px 6px 25px -13px gray;
+        box-shadow: $shadow-light;
             &__number{
                 font-size: 0.8em;
                 color: white;
@@ -88,4 +88,62 @@
                 font-weight: 500;
             }
     }
+}
+
+#restaurants{
+    background-color: $colour-menu;
+    h2{
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+}
+
+.store{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: $shadow-light;
+    background-color: white;
+    position: relative;
+    img{
+        height: 200px;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+        object-position: 50% 95%;
+    }
+    &__footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+
+        i{
+            font-size: 1.6em;
+        }
+    }
+    &__infos{
+        h3{
+           font-size: 1.1em; 
+           margin-bottom: 5px;
+        }
+        p{
+            font-weight: lighter;
+        }
+    }
+    &__flag{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $colour-tertiary;
+        width: 90px;
+        height: 30px;
+        box-shadow: $shadow-light;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1;
+    }
+
 }
