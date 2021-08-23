@@ -1,6 +1,21 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#arrow{
+    position: absolute;
+    left: 30px;
+    margin-top: 15px;
+    color: black;
+    font-size: 1.5em;
+}
+
 #logo{
     display: flex;
     justify-content: center;
+    justify-self: center;
     height: 40px;
     padding: 30px 0 15px 0;
 }

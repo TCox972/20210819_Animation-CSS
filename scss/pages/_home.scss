@@ -4,6 +4,7 @@
     align-items: center;
     text-align: center;
     background-color: $colour-menu;
+    padding-bottom: 60px;
         &__headline{
             font-weight: bold;
             font-size: 1.9em;
@@ -13,19 +14,6 @@
             font-weight: 300;
             font-size: 1.3em;
             margin: 10px 30px 30px 30px;
-        }
-        button{
-            border-style: none;
-            border-radius: 40px;
-            color: white;
-            font-size: 1em;
-            padding: 15px;
-            box-shadow: $shadow-light;
-            margin-bottom: 60px;
-            background: $colour-secondary;
-            background: -moz-linear-gradient(-45deg, $colour-secondary 0%, $colour-primary 100%);
-            background: -webkit-linear-gradient(-45deg, $colour-secondary 0%, $colour-primary 100%);
-            background: linear-gradient(135deg, $colour-secondary 0%, $colour-primary 100%);
         }
 }
 
@@ -53,6 +41,7 @@
 }
 
 #use{
+    padding-bottom: 50px;
     h2{
         padding-top: 30px;
         padding-bottom: 30px;
@@ -87,6 +76,12 @@
             &__text{
                 font-weight: 500;
             }
+    }
+    #disgust-step{
+        background-color: $light-primary;
+        i{
+            color: $colour-primary;
+        }
     }
 }
 

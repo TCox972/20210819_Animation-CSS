@@ -1,0 +1,12 @@
+#button-explore{
+    border-style: none;
+    border-radius: 40px;
+    color: white;
+    font-size: 1em;
+    padding: 15px;
+    box-shadow: $shadow-light;
+    background: $colour-secondary;
+    background: -moz-linear-gradient(-45deg, $colour-secondary 0%, $colour-primary 100%);
+    background: -webkit-linear-gradient(-45deg, $colour-secondary 0%, $colour-primary 100%);
+    background: linear-gradient(135deg, $colour-secondary 0%, $colour-primary 100%);
+}
