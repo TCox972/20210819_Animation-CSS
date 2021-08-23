@@ -92,6 +92,7 @@
 
 #restaurants{
     background-color: $colour-menu;
+    padding-bottom: 50px;
     h2{
         margin-top: 40px;
         margin-bottom: 30px;
@@ -105,6 +106,8 @@
     box-shadow: $shadow-light;
     background-color: white;
     position: relative;
+    margin-bottom: 25px;
+    color: black;
     img{
         height: 200px;
         width: 100%;
@@ -112,6 +115,9 @@
         border-top-right-radius: 20px;
         object-fit: cover;
         object-position: 50% 95%;
+    }
+    #position-img{
+        object-position: 50% 60%;
     }
     &__footer{
         display: flex;
@@ -125,10 +131,11 @@
     }
     &__infos{
         h3{
-           font-size: 1.1em; 
+           font-size: 1.3em; 
            margin-bottom: 5px;
         }
         p{
+            font-size: 1.2em;
             font-weight: lighter;
         }
     }
@@ -137,6 +144,7 @@
         align-items: center;
         justify-content: center;
         background-color: $colour-tertiary;
+        color: $dark-flag-new;
         width: 90px;
         height: 30px;
         box-shadow: $shadow-light;
