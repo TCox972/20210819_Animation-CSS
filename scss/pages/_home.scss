@@ -150,3 +150,34 @@
     }
 
 }
+
+@media screen and(min-width : 768px) {
+    #use{
+        max-width: 768px;
+        margin: auto;
+        h2{
+            text-align: center;
+            font-size: 2.3em;
+            margin-bottom: 30px;
+        }
+    }
+
+    #restaurants h2{
+        text-align: center;
+        font-size: 2.3em;
+        margin-bottom: 50px;
+    }
+
+    #restaurants-offer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .store{
+            width: 40%;
+        }
+    }
+
+
+
+    
+}
