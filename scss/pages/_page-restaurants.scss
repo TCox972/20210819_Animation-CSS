@@ -16,7 +16,8 @@
     margin-top: -50px;
     padding-bottom: 90px;
     a{
-        text-align: center;
+        width: fit-content;
+        align-self: center;
         margin-top: 40px;
     }
 }
@@ -52,24 +53,67 @@
             margin-left: 10px;
         }
         &__meal{
-            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             background-color: white;
-            padding: 15px;
             border-radius: 20px;
             box-shadow: $shadow-light;
             margin-bottom: 15px;
-            h3{
-                font-weight: 500;
-                margin-bottom: 5px;
-            }
-            p{
-                font-weight: 300;
+            &--infos{
+                display: flex;
+                flex-direction: column;
+                padding: 15px;
+                width: 65%;
+                overflow: hidden;
+                h3{
+                    font-weight: 500;
+                    margin-bottom: 5px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .supplement{
+                    font-weight: 300;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                
             }
             .price{
-                position: absolute;
-                right: 20px;
-                bottom: 15px;
+                align-self: flex-end;
                 font-weight: bold;
+                padding: 15px;
+                width: auto;
+            }
+            .checkbox{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $colour-tertiary;
+                border-radius: 0 20px 20px 0;
+                height: 80px;
+                width: 0%;
+                transform: scaleX(0);
+                transition: all 500ms;
+                transform-origin: right;
+                i{
+                    font-size: 1.4em;
+                    color: white;
+                    opacity: O;
+                    transition: all 500ms;
+                }
+            }
+            &:hover{
+                .checkbox{
+                    width: 25%;
+                    transform: scaleX(1);
+                    i{
+                        transform: rotate(-360deg);
+                        opacity: 1;
+                    }
+                }
             }
         }
 }

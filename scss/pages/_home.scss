@@ -76,13 +76,14 @@
             &__text{
                 font-weight: 500;
             }
+            &:hover{
+                background-color: $light-primary;
+                i{
+                    color: $colour-primary;
+                }
+            }
     }
-    #disgust-step{
-        background-color: $light-primary;
-        i{
-            color: $colour-primary;
-        }
-    }
+    
 }
 
 #restaurants{

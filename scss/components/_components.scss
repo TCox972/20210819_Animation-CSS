@@ -5,10 +5,19 @@
     font-size: 1em;
     padding: 15px;
     box-shadow: $shadow-light;
+    cursor: pointer;
     background: $colour-secondary;
     background: -moz-linear-gradient(-45deg, $colour-secondary 0%, $colour-primary 100%);
     background: -webkit-linear-gradient(-45deg, $colour-secondary 0%, $colour-primary 100%);
     background: linear-gradient(135deg, $colour-secondary 0%, $colour-primary 100%);
+    opacity: 1;
+    transform: scale(1);
+    &:hover{
+        opacity: 0.8;
+        transform: scale(1.01);
+        box-shadow: $shadow-dark;
+        transition: all 350ms;
+    }
 }
 
 #button-command{
@@ -18,8 +27,17 @@
     font-size: 1em;
     padding: 15px 50px 15px 50px;
     box-shadow: $shadow-light;
+    cursor: pointer;
     background: $colour-secondary;
     background: -moz-linear-gradient(-45deg, $colour-secondary 0%, $colour-primary 100%);
     background: -webkit-linear-gradient(-45deg, $colour-secondary 0%, $colour-primary 100%);
     background: linear-gradient(135deg, $colour-secondary 0%, $colour-primary 100%);
+    opacity: 1;
+    transform: scale(1);
+    &:hover{
+        opacity: 0.8;
+        transform: scale(1.01);
+        box-shadow: $shadow-dark;
+        transition: all 350ms;
+    }
 }
