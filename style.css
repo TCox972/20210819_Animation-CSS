@@ -311,6 +311,10 @@ form {
     font-size: 2.3em;
     margin-bottom: 30px;
   }
+  #restaurants-offer {
+    max-width: 1300px;
+    margin: auto;
+  }
   #restaurants h2 {
     text-align: center;
     font-size: 2.3em;
@@ -518,6 +522,9 @@ form {
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
   }
   .menu-section {
     width: 30%;
