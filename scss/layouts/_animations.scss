@@ -1,57 +1,25 @@
 .card1{
     opacity: 0;
-    animation: menu 600ms both;
+    animation: menu 1500ms both;
 }
 
-@keyframes menu {
-    0% {
-        opacity: 0;
-        transform: translateY( 20%);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0%);
-    }
-}
 
 .card2{
     opacity: 0;
-    animation: menu 1500ms 150ms both;
+    animation: menu 1500ms 200ms both;
 }
 
-@keyframes menu {
-    0% {
-        opacity: 0;
-        transform: translateY( 20%);
-    }
 
-    100% {
-        opacity: 1;
-        transform: translateY(0%);
-    }
-}
 
 .card3{
     opacity: 0;
-    animation: menu 1500ms 300ms both;
+    animation: menu 1500ms 400ms both;
 }
 
-@keyframes menu {
-    0% {
-        opacity: 0;
-        transform: translateY( 20%);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0%);
-    }
-}
 
 .card4{
     opacity: 0;
-    animation: menu 1500ms 450ms both;
+    animation: menu 1500ms 600ms both;
 }
 
 @keyframes menu {

@@ -590,8 +590,26 @@ footer a i {
 
 .card1 {
   opacity: 0;
-  -webkit-animation: menu 600ms both;
-          animation: menu 600ms both;
+  -webkit-animation: menu 1500ms both;
+          animation: menu 1500ms both;
+}
+
+.card2 {
+  opacity: 0;
+  -webkit-animation: menu 1500ms 200ms both;
+          animation: menu 1500ms 200ms both;
+}
+
+.card3 {
+  opacity: 0;
+  -webkit-animation: menu 1500ms 400ms both;
+          animation: menu 1500ms 400ms both;
+}
+
+.card4 {
+  opacity: 0;
+  -webkit-animation: menu 1500ms 600ms both;
+          animation: menu 1500ms 600ms both;
 }
 
 @-webkit-keyframes menu {
@@ -605,63 +623,6 @@ footer a i {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
   }
-}
-
-@keyframes menu {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(20%);
-            transform: translateY(20%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-
-.card2 {
-  opacity: 0;
-  -webkit-animation: menu 1500ms 150ms both;
-          animation: menu 1500ms 150ms both;
-}
-
-@keyframes menu {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(20%);
-            transform: translateY(20%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-
-.card3 {
-  opacity: 0;
-  -webkit-animation: menu 1500ms 300ms both;
-          animation: menu 1500ms 300ms both;
-}
-
-@keyframes menu {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(20%);
-            transform: translateY(20%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-
-.card4 {
-  opacity: 0;
-  -webkit-animation: menu 1500ms 450ms both;
-          animation: menu 1500ms 450ms both;
 }
 
 @keyframes menu {
